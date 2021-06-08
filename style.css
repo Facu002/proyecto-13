@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:   rgb(73, 73, 73);
+}
+
+.nav{
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    text-align: center;
+}
+
+.nav img{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: medium;
+}
+
+/* BANNER */
+
+.banner{
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.banner ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+}
+
+.banner li{
+    width: 100%;
+}
+
+.banner img{
+    width:100%;
+    max-height:100%;
+    object-fit: contain;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+/* MAIN */
+
+.main{
+    
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas: 
+    "p1 p2 p3 p4"
+    "p1 p2 p5 p6"
+    "p7 p8 p9 p6"
+    ;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Producto */
+.p1{
+    border: 1px solid black;
+    background-color: rgb(29, 29, 29) ;
+    grid-area: p1;
+}
+
+.p1 img{
+    height: 40vh;
+    width: 100%;
+}
+
+/* ------------------------------------------ */
+
+.p2{
+    grid-area: p2;
+    background-color: rgb(29, 29, 29) ;
+    border: 1px solid black;
+}
+.p2 img{
+    height: 40vh;
+    width: 100%;
+}
+
+/* ------------------------------------------ */
+.p3{
+    grid-area: p3;
+    background-color: rgb(29, 29, 29) ;
+    border: 1px solid black;
+}
+.p3 img{
+    height: 20vh;
+    width: 100%;
+}
+
+/* ------------------------------------------ */
+.p4{
+    grid-area: p4;
+    background-color: rgb(29, 29, 29) ;
+    border: 1px solid black;
+}
+.p4 img{
+    height: 20vh;
+    width: 100%;
+}
+/* ------------------------------------------ */
+.p5{
+    grid-area: p5;
+    background-color: rgb(29, 29, 29) ;
+    border: 1px solid black;
+}
+.p5 img{
+    height: 20vh;
+    width: 100%;
+}
+/* ------------------------------------------ */
+.p6{
+    grid-area: p6;
+    background-color: rgb(29, 29, 29) ;
+    border: 1px solid black;
+}
+.p6 img{
+    height: 40vh;
+    width: 100%;
+}
+/* ------------------------------------------ */
+.p7{
+    grid-area: p7;
+    background-color: rgb(29, 29, 29) ;
+    border: 1px solid black;
+}
+.p7 img{
+    height: 20vh;
+    width: 100%;
+}
+/* ------------------------------------------ */
+.p8{
+    grid-area: p8;
+    background-color: rgb(29, 29, 29) ;
+    border: 1px solid black;
+}
+.p8 img{
+    height: 20vh;
+    width: 100%;
+}
+/* ------------------------------------------ */
+.p9{
+    grid-area: p9;
+    background-color: rgb(29, 29, 29) ;
+    border: 1px solid black;
+}
+.p9 img{
+    height: 20vh;
+    width: 100%;
+}
+
+
+.wrap{
+    text-align: right;
+    
+}
+
+.wrap  a:hover{
+    color: rgb(255, 196, 0);
+}
+
+.wrap a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    padding-right: 10px;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.wrap p{
+    text-align: right;
+    padding-right: 10px;
+    color: rgb(141, 141, 141);
+    font-size: medium;
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+.wrap h3{
+    color: rgb(255, 196, 0);
+    font-size: x-large;
+    padding-right: 10px;  
+    
+}
