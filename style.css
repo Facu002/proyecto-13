@@ -89,10 +89,9 @@ body{
   grid-template-columns: repeat(3, 300px);
   grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
-  padding: 40px;
+  padding: 30px;
   justify-content: center;
 }
-
 
 
 .wrap{
@@ -108,13 +107,12 @@ body{
 
 
 .wrap  a:hover{
-    color: rgb(255, 196, 0);
+    color: rgb(179, 147, 42);
 }
 
 .wrap a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: large;
     padding-right: 10px;
     font-size: x-large;
     font-weight: 700;
@@ -134,4 +132,46 @@ body{
     font-size: x-large;
     padding-right: 10px;  
     
+}
+
+@media (max-width: 580px) {
+    .main{
+        display: inline-block;
+        padding:  0 60px 10px 60px;
+        justify-content: center;
+    }
+    .wrap{
+        margin-bottom: 20px;
+    }
+    .wrap a{
+        font-size: 14px;
+        font-weight: 0;
+    }
+    .wrap p{
+        font-size: 14px;
+        font-weight: 0;
+    }
+    .wrap h3{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 580px) {
+   .main{ 
+       display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 40px;
+    
+    }
+}
+@media (min-width: 980px) {
+ .main{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 40px;
+ }
 }
